@@ -1,0 +1,25 @@
+### Create a new task
+POST http://localhost:3000/task HTTP/1.1
+content-type: application/json
+
+{
+    "title": "R"
+}
+
+### Get all tasks
+GET http://localhost:3000/task HTTP/1.1
+
+### Get task by ID (replace {id} with actual task ID)
+GET http://localhost:3000/task/0d696ec3-ac48-4a03-bcd2-795c72395419 HTTP/1.1
+
+### Update task (replace {id} with actual task ID)
+PUT http://localhost:3000/task/0d696ec3-ac48-4a03-bcd2-795c72395419 HTTP/1.1
+content-type: application/json
+
+{
+    //"title": "Barrer y trapear la casa"
+    "completed": true
+}
+
+### Delete task (replace {id} with actual task ID)
+DELETE http://localhost:3000/task/8e64f6a3-4e3e-47d3-9fdb-44a0de5f3ddd HTTP/1.1
